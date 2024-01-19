@@ -1,0 +1,544 @@
+*{
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h{
+        height: 10vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        box-shadow: 0 0.5vmin 1vmin gray;
+}
+
+.header .head{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+}
+
+.header .head .fa-bars{
+        padding: 0vmin 3vmin;
+        font-size: 3.5vmin;
+        color: white;
+        transition: 0.3s;
+        display: none;
+}
+
+.header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(rgb(176, 32, 80),rgb(173, 21, 72));
+        height: 10vh;
+}
+
+.header h2{
+        font-size: 6vmin;
+        font-weight: 700;
+        padding-left: 2vmin;
+        color: white;
+}
+
+.header ul{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        padding-top: 2vmin;
+        padding-bottom: 1vmin;
+        align-items: center;
+}
+
+.header ul li{
+        padding: 0vmin 3vmin;
+        font-size: 3.2vmin;
+        color: white;
+        transition: 0.2s;
+}
+
+.header ul li:hover{
+        color: rgb(29, 29, 29);
+        transform:translateY(-0.5vmin)
+}
+
+.header ul li .l:hover{
+        color: rgb(29, 29, 29);
+}
+
+.header ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        transition: 0.3s;
+}
+
+.fa-arrow-up{
+        
+        bottom: 3vmin;
+        right: 3vmin;
+        position: fixed;
+        z-index: 1200;
+        background-color: rgb(173, 21, 72);
+        color: white;
+        font-size: 3vmin;
+        padding: 2.2vmin 3vmin;
+        cursor: pointer;
+}
+
+#about{
+        background-image: linear-gradient(rgb(233, 232, 232),rgb(247, 245, 245));
+        /*background-color: rgb(247, 245, 245);*/
+        height: 120vh;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 14vh;
+        padding-bottom: 8vmin;
+}
+
+#about .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5vmin;
+}
+
+#about .text h1{
+        font-size: 6vmin;
+        font-weight: 600;
+        color: black;
+}
+
+#about .text h1 span{
+        color: rgb(173, 21, 72);
+        font-size: 11vmin;
+}
+
+#about .text p{
+        color: black;
+        font-size: 3vmin;
+        margin-top: 1vmin;
+        letter-spacing: 0.3vmin;
+}
+
+#about .text .button1{
+        background-color: rgb(173, 21, 72);
+        color: white;
+        border-color: transparent;
+        font-size: 2.7vmin;
+        padding: 1vmin 4vmin;
+        border-radius: 4vmin;
+        margin-top: 2vmin;
+        transition: 0.3s;
+        outline: none;
+        letter-spacing: 0.2vmin;
+}
+
+#about .text .b{
+        background-color: rgb(247, 245, 245);
+        color: rgb(173, 21, 72);
+        border-color: rgb(173, 21, 72);
+        font-size: 2.7vmin;
+        padding: 1vmin 4vmin;
+        border-radius: 4vmin;
+        margin-top: 2vmin;
+        transition: 0.3s;
+        outline: none;
+        letter-spacing: 0.2vmin;
+}
+
+#about .text .button1:hover{
+        background-color: rgb(247, 245, 245);
+        color: rgb(173, 21, 72);
+        border-color: rgb(173, 21, 72);
+}
+
+#about .text .b:hover{
+        color: rgb(247, 245, 245);
+        background-color: rgb(173, 21, 72);
+        border-color: transparent;
+}
+
+#about .logo{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 5vmin;
+        padding-left: 0vmin;
+}
+
+#about .logo img{
+        width: 90%;
+        height: auto;
+}
+
+#skills{
+        background-image: linear-gradient(rgb(247, 245, 245),rgb(233, 232, 232));
+        /*background-color: rgb(247, 245, 245);*/
+        padding: 12vmin 0vmin;
+}
+
+#skills h1{
+        text-align: center;
+        letter-spacing: 1.5vmin;
+        font-size: 6vmin;
+        font-weight: 700;
+        margin-bottom: 10vmin;
+        color: black;
+}
+
+#skills h1 span{
+        color: rgb(173, 21, 72);
+        font-size: 10vmin;
+}
+
+.skill div{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        height: 30vmin;
+        align-items: center;
+        border: 0.3vmin solid rgb(173, 21, 72);
+}
+
+.skill img{
+        width: 65%;
+        height: 70%;
+        transition: 0.3s;
+}
+
+.skill img:hover{
+        transform: scale(1.05);
+}
+
+#skills .s{
+        justify-content: center;
+        margin: 2vmin 0vmin;
+}
+
+.skill h4{
+        text-align: center;
+        margin-top: 1vmin;
+        font-weight: 600;
+        color: rgb(173, 21, 72);
+        font-size: 3.2vmin;
+}
+
+#projects{
+        /*background-color: rgb(247, 245, 245);*/
+        padding: 12vmin 0vmin;
+        background-image: linear-gradient(rgb(233, 232, 232),rgb(247, 245, 245));
+}
+
+#projects h1{
+        text-align: center;
+        letter-spacing: 1.5vmin;
+        font-size: 6vmin;
+        font-weight: 700;
+        margin-bottom: 10vmin;
+        color: black;
+}
+
+#projects h1 span{
+        color: rgb(173, 21, 72);
+        font-size: 10vmin;
+}
+
+#projects .website{
+        justify-content: center;
+        margin-top: 5vmin;
+        display: flex;
+        flex-wrap: wrap;
+}
+
+#projects a{
+        padding: 0vmin 0vmin;
+        text-decoration: none;
+        color: rgb(173, 21, 72);
+        position: relative;
+}
+
+#projects a .t{
+        position: absolute;
+        bottom: 3vmin;
+        z-index: 999;
+        padding-left: 3vmin;
+        display: none;
+        transition: 0.3s;
+}
+
+#projects a .t h3{
+        font-size: 3.5vmin;
+        font-weight: 600;
+        color: rgb(173, 21, 72);
+}
+
+#projects a .t b{
+        font-size: 2.7vmin;
+        color: rgb(173, 21, 72);
+        letter-spacing: 0.2vmin;
+}
+
+#projects .project1{
+        background-image: url(../images/le-catering.png);
+        background-size: cover;
+        height: 39vmin;
+        transition: 0.3s;
+        border-radius: 0.7vmin;
+        box-shadow: 0 0 1vmin rgb(35, 35, 35);
+}
+
+#projects .p1:hover .project1{
+        transform: scale(1.03);
+        opacity: 30%;
+        box-shadow: 0.7vmin 0.7vmin 1vmin rgb(0, 0, 0);
+}
+
+#projects .p1:hover .t{
+        display: block;
+}
+
+#projects .project2{
+        background-image: url(../images/mizaj0.png);
+        background-size: cover;
+        height: 39vmin;
+        transition: 0.3s;
+        border-radius: 0.7vmin;
+        box-shadow: 0 0 1vmin rgb(35, 35, 35);
+}
+
+#projects .p2:hover .project2{
+        transform: scale(1.03);
+        opacity: 30%;
+        box-shadow: 0.7vmin 0.7vmin 1vmin rgb(0, 0, 0);
+}
+
+#projects .p2:hover .t{
+        display: block;
+}
+
+/*#projects .p1{
+        margin-bottom: 3vmin;
+}
+
+#projects .p2{
+        margin-bottom: 3vmin;
+}*/
+
+#contact{
+        /*background-color: rgb(247, 245, 245);*/
+        padding: 12vmin 0vmin;
+        background-image: linear-gradient(rgb(247, 245, 245),rgb(233, 232, 232));
+}
+
+#contact h1{
+        text-align: center;
+        letter-spacing: 1.5vmin;
+        font-size: 6vmin;
+        font-weight: 700;
+        margin-bottom: 4vmin;
+        color: black;
+}
+
+#contact h1 span{
+        color: rgb(173, 21, 72);
+        font-size: 10vmin;
+}
+
+#contact .c1{
+        justify-content: center;
+        margin-bottom: 2vmin;
+        height: 7vmin;
+}
+
+#contact .c1:hover p{
+        transform: translate(-0.5vmin,-0.5vmin);
+        box-shadow: 0.5vmin 0.5vmin 1vmin rgb(19, 19, 19);
+}
+
+#contact .c1:hover i{
+        transform: translate(-0.5vmin,-0.5vmin);
+        box-shadow: 0.8vmin 0.5vmin 1vmin rgb(19, 19, 19);
+}
+
+#contact .c1 i{
+        /*border: 0.3vmin solid rgb(173, 21, 72);*/
+        border-color: transparent;
+        border-radius: 4vmin 0vmin 0vmin 4vmin;
+        color: rgb(26, 26, 26);
+        background-color: rgb(173, 21, 72);
+        font-size: 3.5vmin;
+        /*padding: 1.2vmin 0vmin;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+}
+
+#contact .c1 p{
+        /*border: 0.3vmin solid rgb(26, 26, 26);*/
+        border-color: transparent;
+        outline: none;
+        border-radius: 0vmin 4vmin 4vmin 0vmin;
+        color: white;
+        background-image: linear-gradient(rgb(26, 26, 26),rgb(35, 35, 35));
+        font-size: 2.5vmin;
+        padding: 0vmin 2vmin;
+        display: flex;
+        align-items: center;
+        height: 100%;
+}
+
+#contact .c1 .p5{
+        text-decoration: none;
+        color: white;
+}
+
+#contact .info{
+        margin-top: 6vmin;
+}
+
+.f div{
+        background-image: linear-gradient(rgb(26, 26, 26),rgb(35, 35, 35));
+        height: 13vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+}
+
+.f h4{
+        color: white;
+        font-size: 3.5vmin;
+}
+
+.f h4 span{
+        border: 0.3vmin solid white;
+        padding: 0vmin 1.5vmin;
+        margin-right: 1vmin;
+        padding-bottom: 0.5vmin;
+}
+
+.f i{
+        color: white;
+        font-size: 2.9vmin;
+        font-weight: 400;
+        letter-spacing: 0.3vmin;
+        display: flex;
+        justify-content: flex-end;
+}
+
+@media (max-width: 576px) {
+        #projects .p1{
+                margin-bottom: 7vmin;
+        }
+
+        #about{
+                padding-top: 18vh;
+        }
+
+        #about .logo{
+                margin-top: 15vmin;
+                margin-bottom: 10vmin;
+        }
+        #about .text{
+                line-height: 6vmin;
+        }
+
+        #about .text h1{
+                line-height: 13vmin;
+        }
+
+        #about .text p{
+                line-height: 10vmin;
+                font-size: 4vmin;
+        }
+
+        #about .text .button1{
+                font-size: 3.5vmin;
+        }
+
+        #about .text .b{
+                font-size: 3.5vmin;
+        }
+
+        .header .head .fa-bars{
+                display: block;
+        }
+
+        .header #list{
+                display: none;
+        }
+}
+
+@media (min-width: 576px) {
+        #projects .project1{
+                height: 32vmin;
+        }
+
+        #projects .project2{
+                height: 32vmin;
+        }
+
+        #about .text h1{
+                font-size: 4.3vmin;
+        }
+
+        #about .text h1 span{
+                font-size: 8.3vmin;
+        }
+
+}
+
+@media (min-width: 768px) {
+        /*#about .logo{
+                align-items: center;
+        }*/
+
+        #about .text h1{
+                font-size: 5vmin;
+        }
+
+        #about .text h1 span{
+                font-size: 9vmin;
+        }
+}
+
+@media (max-width: 768px) {
+        #about .logo{
+                align-items: center;
+        }
+}
+
+@media (min-width: 1007px) {
+        /*#about .logo{
+                align-items: center;
+        }*/
+
+        #about .text h1{
+                font-size: 6vmin;
+        }
+
+        #about .text h1 span{
+                font-size: 11vmin;
+        }
+}
+
+@media (max-width: 768px) {
+        #about .logo{
+                padding-right: 5vmin;
+        }
+}
+
+@media (min-width: 780px) {
+        #projects .project1{
+                height: 39vmin;
+        }
+
+        #projects .project2{
+                height: 39vmin;
+        }
+}
